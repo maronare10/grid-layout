@@ -1,0 +1,44 @@
+.container {
+  border: 5px solid rgb(25, 196, 235);
+  background-color: blanchedalmond;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: 100px 100px 100px; 
+  grid-template-areas: 
+    "header header header"
+    "aside main main"
+    "aside main main"
+    "footer footer footer";
+  place-content: center;
+  }
+  
+  .item {
+    font-size: 4rem;
+  }
+  
+  .item-1 {
+    border: 5px solid rgb(128, 109, 222);
+    background-color: rgb(65, 111, 180);
+    grid-area: header;
+  
+  }
+  
+  .item-2 {
+    border: 5px solid rgb(33, 118, 13);
+    background-color: rgb(18, 237, 44);
+    grid-area: main;
+  }
+  
+  .item-3 {
+    border: 5px solid rgb(224, 134, 85);
+    background-color: rgb(240, 82, 8);
+    grid-area: aside;
+    
+  }
+  
+  .item-4 {
+    border: 5px solid rgb(236, 98, 215);
+    background-color: rgb(205, 19, 180);
+    grid-area: footer;
+  }
+  
